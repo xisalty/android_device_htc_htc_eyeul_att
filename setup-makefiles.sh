@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export DEVICE=m8
+export DEVICE=htc_eyeul_att
 export VENDOR=htc
 
 OUTDIR=vendor/$VENDOR/$DEVICE
@@ -101,7 +101,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifneq (\$(filter m8,\$(TARGET_DEVICE)),)
+ifneq (\$(filter htc_eyeul_att,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
